@@ -1,7 +1,5 @@
 # QRNG_CERTIFICATE
 
-# qrng-certification
-
 Experimental code and measured results for a study of **quantum random number
 generation from gate-model circuits**: two generators (a rotation-based one and a
 GHZ-entangled one) are simulated, their raw bit streams are measured, an entropy
