@@ -1,0 +1,17 @@
+{
+  "qrng_rotation": {
+    "status": "ok"
+  },
+  "qrng_ghz": {
+    "status": "ok"
+  },
+  "chsh_pair": {
+    "status": "ok"
+  },
+  "bb84_round": {
+    "status": "ok"
+  },
+  "bb84_batch": {
+    "status": "ok"
+  }
+}

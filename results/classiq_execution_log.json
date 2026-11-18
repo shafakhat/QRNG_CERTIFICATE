@@ -1,0 +1,50 @@
+{
+ "jobs": [
+  {
+   "completed": "2026-11-05 19:42",
+   "program": "bb84_batch.qasm",
+   "shots": 1000,
+   "purpose": "diagnostic: fixed-pattern demo circuit",
+   "used_in_paper": false
+  },
+  {
+   "completed": "2026-11-05 19:54",
+   "program": "qrng_rotation.qasm",
+   "shots": 20000,
+   "purpose": "diagnostic: 16 qubits, 65 536 bins",
+   "used_in_paper": false
+  },
+  {
+   "completed": "2026-11-05 20:05",
+   "program": "qrng_rotation8q.qasm",
+   "shots": 20000,
+   "purpose": "QRNG: rotation generator, 8 qubits",
+   "used_in_paper": true
+  },
+  {
+   "completed": "2026-11-05 20:17",
+   "program": "bb84_round.qasm",
+   "shots": 20000,
+   "purpose": "diagnostic: single-round unit cell",
+   "used_in_paper": false
+  },
+  {
+   "completed": "2026-11-05 20:53",
+   "program": "qrng_ghz.qasm",
+   "shots": 20000,
+   "purpose": "QRNG: GHZ-8 X-basis certificate",
+   "used_in_paper": true
+  },
+  {
+   "completed": "2026-11-05 20:56",
+   "program": "bb84_round.qasm",
+   "shots": 2000,
+   "purpose": "diagnostic: basis-mismatch round (bit 1, Alice X, Bob Z)",
+   "used_in_paper": false,
+   "result": "1013 / 987 -> P(1)=0.4935 +- 0.0112, equiprobable as required"
+  }
+ ],
+ "total_shots": 183000,
+ "shots_in_papers": 120000,
+ "shots_total": 83000
+}

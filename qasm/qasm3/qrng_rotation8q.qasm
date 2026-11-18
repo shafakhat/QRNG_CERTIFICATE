@@ -1,0 +1,21 @@
+// qrng_rotation8q  --  QRNG Classiq model, OpenQASM 3.0
+OPENQASM 3.0;
+include "stdgates.inc";
+qubit[8] q;
+bit[8] c;
+ry(1.5707963267948966) q[0];
+ry(1.5707963267948966) q[1];
+ry(1.5707963267948966) q[2];
+ry(1.5707963267948966) q[3];
+ry(1.5707963267948966) q[4];
+ry(1.5707963267948966) q[5];
+ry(1.5707963267948966) q[6];
+ry(1.5707963267948966) q[7];
+c[0] = measure q[0];
+c[1] = measure q[1];
+c[2] = measure q[2];
+c[3] = measure q[3];
+c[4] = measure q[4];
+c[5] = measure q[5];
+c[6] = measure q[6];
+c[7] = measure q[7];

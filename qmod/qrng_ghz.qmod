@@ -1,0 +1,12 @@
+qfunc main(x_basis: int, output out: qbit[8]) {
+  allocate(out);
+  H(out[0]);
+  repeat (i: 7) {
+    CX(out[i], out[i + 1]);
+  }
+  if (x_basis == 1) {
+    repeat (i: 8) {
+      H(out[i]);
+    }
+  }
+}

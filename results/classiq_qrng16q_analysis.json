@@ -1,0 +1,17 @@
+{
+  "job": "QRNG_ROTATION",
+  "circuit": "qasm/qrng_rotation.qasm",
+  "qubits": 16,
+  "num_shots": 20000,
+  "observed_rows": 17267,
+  "rows_possible": 65536,
+  "predicted_rows": 17236.5,
+  "deviation_percent": 0.18,
+  "mean_count_per_bin_over_all_bins": 0.3052,
+  "mean_count_over_nonzero_bins": 1.158,
+  "predicted_bins_with_count_ge3": 247,
+  "predicted_bins_with_count_ge4": 19,
+  "verdict": "consistent: 17 267 of 65 536 bins are occupied (+0.18 % vs the ideal prediction), the count distribution has mean 0.305 over all bins with ~247 bins at >=3 and ~19 at >=4, which is exactly the 3-4 counts shown at the top of a count-sorted table, and the counts sum to 20 000 (17 267 nonzero bins averaging 1.16)",
+  "used_in_paper": false,
+  "note": "diagnostic run only: 65 536 bins is too fine-grained to quote as a table, which is why the 8-qubit run carries the QRNG claim"
+}

@@ -1,0 +1,1046 @@
+{
+  "meta": {
+    "date": "2026-11-09 17:38:02",
+    "simulator": "qiskit-aer (stabilizer / statevector)",
+    "batch_qubits_per_shot": 16,
+    "stages_run": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6",
+      "F7",
+      "F8",
+      "F9",
+      "F10"
+    ],
+    "wall_seconds": 403.8
+  },
+  "F1_main": {
+    "n_bits": 1048576,
+    "ones": 524322,
+    "p1": 0.5000324249267578,
+    "bias": 3.24249267578125e-05,
+    "bias_ci99_999": [
+      -0.002124293889304185,
+      0.0021891425362406958
+    ],
+    "monobit_z": 0.06640625,
+    "shannon_entropy": 0.9999999969663704,
+    "min_entropy": 0.999906444471429,
+    "autocorr_lag1": -0.000679974769125027,
+    "runs": 524645,
+    "battery": {
+      "Frequency (Monobit)": {
+        "p_value": 0.947054394408222,
+        "pass": true,
+        "info": {
+          "S_n": 68.0,
+          "s_obs": 0.06640625,
+          "n": 1048576
+        }
+      },
+      "Block Frequency (M=128)": {
+        "p_value": 0.5360716832693556,
+        "pass": true,
+        "info": {
+          "M": 128,
+          "N": 8192,
+          "chi2": 8179.75
+        }
+      },
+      "Runs": {
+        "p_value": 0.4856338799438531,
+        "pass": true,
+        "info": {
+          "pi": 0.5000324249267578,
+          "V_obs": 524645
+        }
+      },
+      "Longest Run of Ones": {
+        "p_value": 0.5864822720207359,
+        "pass": true,
+        "info": {
+          "M": 10000,
+          "N": 104,
+          "n_bins": 7,
+          "df": 6,
+          "nu": "...",
+          "pi": "...",
+          "chi2": 4.672250545214926,
+          "max_run": 17
+        }
+      },
+      "Binary Matrix Rank (32x32)": {
+        "p_value": 0.22436217124550226,
+        "pass": true,
+        "info": {
+          "M": 32,
+          "Q": 32,
+          "N": 1024,
+          "F": "...",
+          "chi2": 2.9889873937633724
+        }
+      },
+      "Discrete Fourier Transform": {
+        "p_value": 0.6119977630184182,
+        "pass": true,
+        "info": {
+          "T": 1772.3580237847402,
+          "N0": 498073.6,
+          "N1": 498017,
+          "d": -0.5072238491042366
+        }
+      },
+      "Non-overlapping Template (148)": {
+        "p_value": 0.5178241617099941,
+        "pass": true,
+        "info": {
+          "m": 9,
+          "M": 131072,
+          "J": 148,
+          "N": 8,
+          "n_pass": 139,
+          "pass_fraction": 0.9391891891891891,
+          "min_p": 3.692539272158463e-10,
+          "median_p": 0.5178241617099941,
+          "p_values": "..."
+        }
+      },
+      "Overlapping Template (m=9)": {
+        "p_value": 0.17083292154752042,
+        "pass": true,
+        "info": {
+          "m": 9,
+          "M": 1032,
+          "N": 1016,
+          "chi2": 7.74546159182602,
+          "df": 5,
+          "pi": "...",
+          "nu": "..."
+        }
+      },
+      "Universal (Maurer, L=7)": {
+        "p_value": 0.35286902230327655,
+        "pass": true,
+        "info": {
+          "L": 7,
+          "Q": 1280,
+          "K": 148516,
+          "f_n": 6.193739829645619,
+          "expected": 6.1962507,
+          "sigma": 0.0027026541634591833,
+          "c": 0.5891855501910493
+        }
+      },
+      "Linear Complexity (M=500)": {
+        "p_value": 0.6603455591590868,
+        "pass": true,
+        "info": {
+          "M": 500,
+          "N": 2097,
+          "nu": "...",
+          "chi2": 4.1207057048868485,
+          "mean_L": 250.23605150214593,
+          "mu": 250.22222222222223
+        }
+      },
+      "Serial (m=16)": {
+        "p_value": 0.12238725495056649,
+        "pass": true,
+        "info": {
+          "m": 16,
+          "psi2_m": 66484.25,
+          "psi2_m1": 33420.5,
+          "psi2_m2": 16951.53125,
+          "p_value_1": 0.12416438441170101,
+          "p_value_2": 0.12238725495056649
+        }
+      },
+      "Approximate Entropy (m=10)": {
+        "p_value": 0.10509998526859764,
+        "pass": true,
+        "info": {
+          "m": 10,
+          "ApEn": 0.6926316870067275,
+          "chi2": 1081.0683361177798,
+          "df": 1024,
+          "source": "asymptotic"
+        }
+      },
+      "Cumulative Sums (fwd)": {
+        "p_value": 0.9913619611567543,
+        "pass": true,
+        "info": {
+          "z": 509,
+          "mode": "forward"
+        }
+      },
+      "Cumulative Sums (rev)": {
+        "p_value": 0.9788098638506988,
+        "pass": true,
+        "info": {
+          "z": 562,
+          "mode": "reverse"
+        }
+      }
+    },
+    "battery_pass": 14,
+    "battery_total": 14,
+    "battery_seconds": 7.1
+  },
+  "F4_entropy": {
+    "estimators": {
+      "MCV": {
+        "hmin": 0.9897499099993747,
+        "info": {
+          "p_hat": 0.500685,
+          "p_upper": 0.5035650600523895
+        }
+      },
+      "Collision": {
+        "hmin": 0.8160511161550874,
+        "info": {
+          "n_collisions": 80034,
+          "Xbar": 2.4989129619911536,
+          "Xlow": 2.4907534939233917,
+          "Xhigh": 2.5070724300589156,
+          "p_hat": 0.5233134940415026,
+          "p_upper": 0.5679945074127619
+        }
+      },
+      "Markov": {
+        "hmin": 0.9936450210158287,
+        "info": {
+          "transition_matrix": [
+            [
+              0.49948429348207046,
+              0.5005157065179295
+            ],
+            [
+              0.4991411680115044,
+              0.5008588319884957
+            ]
+          ],
+          "hmin_max_likely": 0.9936450210158287,
+          "hmin_min_likely": 1.0171237218197766
+        }
+      },
+      "Compression": {
+        "hmin": 0.7294099436237299,
+        "info": {
+          "b": 1,
+          "d": 128,
+          "N": 1562,
+          "Xbar": 0.7120113041765334,
+          "p_hat": 0.6031505495154788
+        }
+      },
+      "t-Tuple": {
+        "hmin": 0.9897499099993747,
+        "info": {
+          "hmin": 0.9897499099993747,
+          "t": 1,
+          "pmax": 0.5035650600523895
+        }
+      },
+      "LRS": {
+        "hmin": 0.9897499099993747,
+        "info": {
+          "hmin": 0.9897499099993747,
+          "w": 1,
+          "occ": 100137,
+          "pmax": 0.5035650600523895
+        }
+      },
+      "Lag": {
+        "hmin": 0.9988646689143567,
+        "info": {
+          "accuracy": 0.5003936306343106,
+          "D": 128
+        }
+      },
+      "MultiMCW": {
+        "hmin": 0.998903792881738,
+        "info": {
+          "best_window": 8,
+          "accuracy": 0.5003800608097295
+        }
+      },
+      "LZ78Y": {
+        "hmin": 1.0,
+        "info": {
+          "accuracy": 0.49930555555555556,
+          "B": 16
+        }
+      }
+    },
+    "summary": {
+      "min": 0.7294099436237299,
+      "mean": 0.9451249191765405,
+      "argmin": "Compression"
+    },
+    "iid_test": {
+      "statistic": 0.7134065613550081,
+      "p_value": 0.04950495049504951,
+      "perm_mean": 0.731846849757404,
+      "perm_std": 0.01011747138004252,
+      "n_permutations": 100
+    },
+    "n_used": 200000,
+    "seconds": 48.4
+  },
+  "F5_extraction": {
+    "n_in": 1048576,
+    "n_out": 743803,
+    "h_min_used": 0.7294099436237299,
+    "security_margin": 0.02,
+    "eps_pa": 1e-10,
+    "output_rate": 0.709345817565918,
+    "compression": 1.4097496245645689,
+    "p1": 0.49872748563799824,
+    "min_entropy": 0.9963329640600392,
+    "battery_pass": 13,
+    "battery_total": 14,
+    "battery": {
+      "Frequency (Monobit)": {
+        "p_value": 0.028168265292487355,
+        "pass": true
+      },
+      "Block Frequency (M=128)": {
+        "p_value": 0.22212196458909014,
+        "pass": true
+      },
+      "Runs": {
+        "p_value": 0.644299609783091,
+        "pass": true
+      },
+      "Longest Run of Ones": {
+        "p_value": 0.48937898542240266,
+        "pass": true
+      },
+      "Binary Matrix Rank (32x32)": {
+        "p_value": 0.2754459506512676,
+        "pass": true
+      },
+      "Discrete Fourier Transform": {
+        "p_value": 0.9781416594184211,
+        "pass": true
+      },
+      "Non-overlapping Template (148)": {
+        "p_value": 0.49244610593281773,
+        "pass": true
+      },
+      "Overlapping Template (m=9)": {
+        "p_value": 0.6830526448010856,
+        "pass": true
+      },
+      "Universal (Maurer, L=7)": {
+        "p_value": 0.7584238314465785,
+        "pass": true
+      },
+      "Linear Complexity (M=500)": {
+        "p_value": 0.5064599530702629,
+        "pass": true
+      },
+      "Serial (m=16)": {
+        "p_value": 0.006671774685113251,
+        "pass": false
+      },
+      "Approximate Entropy (m=10)": {
+        "p_value": 0.1209542745337408,
+        "pass": true
+      },
+      "Cumulative Sums (fwd)": {
+        "p_value": 0.05215147360904342,
+        "pass": true
+      },
+      "Cumulative Sums (rev)": {
+        "p_value": 0.05309262789333672,
+        "pass": true
+      }
+    },
+    "seconds": 80.0
+  },
+  "F7_second_level": {
+    "Frequency (Monobit)": {
+      "M": 16,
+      "pass_rate": 1.0,
+      "ci": 0.0746240577829965,
+      "uniformity_p": 0.6890190210880667,
+      "calibrated": true
+    },
+    "Block Frequency (M=128)": {
+      "M": 16,
+      "pass_rate": 1.0,
+      "ci": 0.0746240577829965,
+      "uniformity_p": 0.17424860455476707,
+      "calibrated": true
+    },
+    "Runs": {
+      "M": 16,
+      "pass_rate": 0.9375,
+      "ci": 0.0746240577829965,
+      "uniformity_p": 0.025192895081668894,
+      "calibrated": true
+    },
+    "Longest Run of Ones": {
+      "M": 16,
+      "pass_rate": 1.0,
+      "ci": 0.0746240577829965,
+      "uniformity_p": 0.8119932615881182,
+      "calibrated": true
+    },
+    "Binary Matrix Rank (32x32)": {
+      "M": 16,
+      "pass_rate": 1.0,
+      "ci": 0.0746240577829965,
+      "uniformity_p": 0.5595233687731824,
+      "calibrated": true
+    },
+    "Discrete Fourier Transform": {
+      "M": 16,
+      "pass_rate": 1.0,
+      "ci": 0.0746240577829965,
+      "uniformity_p": 0.8119932615881182,
+      "calibrated": true
+    },
+    "Non-overlapping Template (148)": {
+      "M": 16,
+      "pass_rate": 1.0,
+      "ci": 0.0746240577829965,
+      "uniformity_p": 8.29433738641294e-07,
+      "calibrated": false
+    },
+    "Overlapping Template (m=9)": {
+      "M": 16,
+      "pass_rate": 1.0,
+      "ci": 0.0746240577829965,
+      "uniformity_p": 0.17424860455476693,
+      "calibrated": true
+    },
+    "Universal (Maurer, L=7)": {
+      "M": 16,
+      "pass_rate": 1.0,
+      "ci": 0.0746240577829965,
+      "uniformity_p": 0.9114125268316792,
+      "calibrated": true
+    },
+    "Linear Complexity (M=500)": {
+      "M": 16,
+      "pass_rate": 1.0,
+      "ci": 0.0746240577829965,
+      "uniformity_p": 0.6890190210880667,
+      "calibrated": true
+    },
+    "Serial (m=16)": {
+      "M": 16,
+      "pass_rate": 0.9375,
+      "ci": 0.0746240577829965,
+      "uniformity_p": 0.6890190210880667,
+      "calibrated": true
+    },
+    "Approximate Entropy (m=10)": {
+      "M": 16,
+      "pass_rate": 1.0,
+      "ci": 0.0746240577829965,
+      "uniformity_p": 0.05714646897338437,
+      "calibrated": true
+    },
+    "Cumulative Sums (fwd)": {
+      "M": 16,
+      "pass_rate": 1.0,
+      "ci": 0.0746240577829965,
+      "uniformity_p": 0.2429858445693046,
+      "calibrated": true
+    },
+    "Cumulative Sums (rev)": {
+      "M": 16,
+      "pass_rate": 1.0,
+      "ci": 0.0746240577829965,
+      "uniformity_p": 0.9114125268316792,
+      "calibrated": true
+    },
+    "_seeds": [
+      504748929,
+      551192034,
+      1460644537,
+      549738967,
+      863416383,
+      1992272121,
+      722583114,
+      980370894,
+      1117766182,
+      1956239006,
+      1833908251,
+      201243828,
+      2065051563,
+      559529593,
+      855559536,
+      394974179
+    ]
+  },
+  "F8_prng": {
+    "battery_pass": 14,
+    "battery_applicable": 14,
+    "battery_total": 14,
+    "battery": {
+      "Frequency (Monobit)": {
+        "p_value": 0.7935382838537327,
+        "pass": true
+      },
+      "Block Frequency (M=128)": {
+        "p_value": 0.7119001194712373,
+        "pass": true
+      },
+      "Runs": {
+        "p_value": 0.0459309851590887,
+        "pass": true
+      },
+      "Longest Run of Ones": {
+        "p_value": 0.5611460812558335,
+        "pass": true
+      },
+      "Binary Matrix Rank (32x32)": {
+        "p_value": 0.3911752289736601,
+        "pass": true
+      },
+      "Discrete Fourier Transform": {
+        "p_value": 0.7026378185808817,
+        "pass": true
+      },
+      "Non-overlapping Template (148)": {
+        "p_value": 0.41126158509168076,
+        "pass": true
+      },
+      "Overlapping Template (m=9)": {
+        "p_value": 0.8667927324319855,
+        "pass": true
+      },
+      "Universal (Maurer, L=7)": {
+        "p_value": 0.04043171807997194,
+        "pass": true
+      },
+      "Linear Complexity (M=500)": {
+        "p_value": 0.1905351709853381,
+        "pass": true
+      },
+      "Serial (m=16)": {
+        "p_value": 0.9548395568146386,
+        "pass": true
+      },
+      "Approximate Entropy (m=10)": {
+        "p_value": 0.18418272276009418,
+        "pass": true
+      },
+      "Cumulative Sums (fwd)": {
+        "p_value": 0.7686048020623919,
+        "pass": true
+      },
+      "Cumulative Sums (rev)": {
+        "p_value": 0.7192661790527031,
+        "pass": true
+      }
+    }
+  },
+  "F9_failure_modes": [
+    {
+      "case": "asymmetric readout",
+      "description": "$p_{1|0}=0.02$, $p_{0|1}=0.06$",
+      "p1": 0.47901,
+      "p1_theory": 0.48,
+      "bias": -0.02099000000000001,
+      "min_entropy": 0.9406724135330318,
+      "shannon_entropy": 0.9987283808954706,
+      "autocorr_lag1": -0.0031124087789830093,
+      "n_fail": 7,
+      "n_tests": 14,
+      "failed_tests": {
+        "Frequency (Monobit)": 1.2318464491240563e-78,
+        "Block Frequency (M=128)": 8.346875609269608e-13,
+        "Runs": null,
+        "Longest Run of Ones": 1.368105482205934e-18,
+        "Approximate Entropy (m=10)": 6.518085714277038e-11,
+        "Cumulative Sums (fwd)": 3.715123358425322e-79,
+        "Cumulative Sums (rev)": 4.783974842576504e-79
+      }
+    },
+    {
+      "case": "amplitude damping",
+      "description": "$T_1$ relaxation, $\\gamma=0.08$",
+      "p1": 0.457765,
+      "p1_theory": 0.46,
+      "bias": -0.04223500000000002,
+      "min_entropy": 0.8830098561183205,
+      "shannon_entropy": 0.994846916683113,
+      "autocorr_lag1": 0.0049450924803409,
+      "n_fail": 11,
+      "n_tests": 14,
+      "failed_tests": {
+        "Frequency (Monobit)": 0.0,
+        "Block Frequency (M=128)": 8.741158937261658e-90,
+        "Runs": null,
+        "Longest Run of Ones": 8.100863746363017e-56,
+        "Discrete Fourier Transform": 1.9307608864887245e-06,
+        "Non-overlapping Template (148)": 0.006529829883703143,
+        "Overlapping Template (m=9)": 1.639436453899719e-09,
+        "Universal (Maurer, L=7)": 3.5502646674938303e-07,
+        "Approximate Entropy (m=10)": 7.308373449416196e-122,
+        "Cumulative Sums (fwd)": 0.0,
+        "Cumulative Sums (rev)": 0.0
+      }
+    },
+    {
+      "case": "slow pulse drift",
+      "description": "$\\theta(t)=\\pi/2+0.05\\sin(2\\pi\\cdot0.02\\,t)$",
+      "p1": 0.496005,
+      "p1_theory": 0.5,
+      "bias": -0.003995000000000026,
+      "min_entropy": 0.9885186736839678,
+      "shannon_entropy": 0.9999539486121652,
+      "autocorr_lag1": -0.00040878865233273887,
+      "n_fail": 9,
+      "n_tests": 14,
+      "failed_tests": {
+        "Frequency (Monobit)": 0.00035259586470583914,
+        "Block Frequency (M=128)": 9.143600829730747e-46,
+        "Longest Run of Ones": 0.0006109399636839606,
+        "Discrete Fourier Transform": 0.0,
+        "Universal (Maurer, L=7)": 0.003264028464614758,
+        "Serial (m=14)": 0.0,
+        "Approximate Entropy (m=10)": 0.0,
+        "Cumulative Sums (fwd)": 0.0006200462086564695,
+        "Cumulative Sums (rev)": 1.7767605773270052e-06
+      }
+    },
+    {
+      "case": "phase damping",
+      "description": "$T_2$ dephasing, $\\lambda=0.3$",
+      "p1": 0.50006,
+      "p1_theory": 0.5,
+      "bias": 5.999999999994898e-05,
+      "min_entropy": 0.9998268869816669,
+      "shannon_entropy": 0.9999999896125957,
+      "autocorr_lag1": -0.0009350190636550217,
+      "n_fail": 0,
+      "n_tests": 14,
+      "failed_tests": {}
+    }
+  ],
+  "F10_estimator_validation": [
+    {
+      "p": 0.5,
+      "true_hmin": 1.0,
+      "n_used": 60000,
+      "estimates": {
+        "MCV": 0.9693353737207033,
+        "Collision": 0.7567021428088738,
+        "Markov": 0.9702827417479047,
+        "Compression": 0.7286314922237577,
+        "t-Tuple": 0.9693353737207033,
+        "LRS": 0.9693353737207033,
+        "Lag": 0.9876546127475108,
+        "MultiMCW": 0.9977403422216502,
+        "LZ78Y": 0.9882393401204257
+      },
+      "min": 0.7286314922237577,
+      "argmin": "Compression",
+      "all_conservative": true
+    },
+    {
+      "p": 0.55,
+      "true_hmin": 0.862496476250065,
+      "n_used": 60000,
+      "estimates": {
+        "MCV": 0.8495731884668951,
+        "Collision": 0.7721876838839175,
+        "Markov": 0.8491604214742943,
+        "Compression": 0.7045198667896782,
+        "t-Tuple": 0.8495731884668951,
+        "LRS": 0.8495731884668951,
+        "Lag": 0.8633376281535284,
+        "MultiMCW": 0.9662361900138068,
+        "LZ78Y": 0.8636141476581871
+      },
+      "min": 0.7045198667896782,
+      "argmin": "Compression",
+      "all_conservative": false
+    },
+    {
+      "p": 0.6,
+      "true_hmin": 0.7369655941662062,
+      "n_used": 60000,
+      "estimates": {
+        "MCV": 0.7247097324212357,
+        "Collision": 0.6643349234501374,
+        "Markov": 0.7250390893686237,
+        "Compression": 0.6352863630405117,
+        "t-Tuple": 0.7247097324212357,
+        "LRS": 0.7247097324212357,
+        "Lag": 0.73728096866089,
+        "MultiMCW": 0.8232055171400204,
+        "LZ78Y": 0.7374554812026558
+      },
+      "min": 0.6352863630405117,
+      "argmin": "Compression",
+      "all_conservative": false
+    },
+    {
+      "p": 0.7,
+      "true_hmin": 0.5145731728297583,
+      "n_used": 60000,
+      "estimates": {
+        "MCV": 0.5027403675113342,
+        "Collision": 0.4781647967793402,
+        "Markov": 0.5023835883297314,
+        "Compression": 0.4580685100021778,
+        "t-Tuple": 0.5027403675113342,
+        "LRS": 0.5027403675113342,
+        "Lag": 0.5109886105812104,
+        "MultiMCW": 0.5234882810845463,
+        "LZ78Y": 0.5109519005966046
+      },
+      "min": 0.4580685100021778,
+      "argmin": "Compression",
+      "all_conservative": false
+    },
+    {
+      "p": 0.8,
+      "true_hmin": 0.3219280948873623,
+      "n_used": 60000,
+      "estimates": {
+        "MCV": 0.3121389114750478,
+        "Collision": 0.3025695815574133,
+        "Markov": 0.30454064287163185,
+        "Compression": 0.2898495172781152,
+        "t-Tuple": 0.3121389114750478,
+        "LRS": 0.3121389114750478,
+        "Lag": 0.3198036745358262,
+        "MultiMCW": 0.3199567070661903,
+        "LZ78Y": 0.31982569724534754
+      },
+      "min": 0.2898495172781152,
+      "argmin": "Compression",
+      "all_conservative": true
+    },
+    {
+      "p": 0.9,
+      "true_hmin": 0.15200309344504995,
+      "n_used": 60000,
+      "estimates": {
+        "MCV": 0.1483202400555902,
+        "Collision": 0.14046585475757034,
+        "Markov": 0.14680972466359934,
+        "Compression": 0.13053659073713636,
+        "t-Tuple": 0.1483202400555902,
+        "LRS": 0.1483202400555902,
+        "Lag": 0.15441284355013174,
+        "MultiMCW": 0.15345263246404048,
+        "LZ78Y": 0.15432038998719336
+      },
+      "min": 0.13053659073713636,
+      "argmin": "Compression",
+      "all_conservative": false
+    },
+    {
+      "p": 0.97,
+      "true_hmin": 0.043943347587597055,
+      "n_used": 60000,
+      "estimates": {
+        "MCV": 0.0414457790010058,
+        "Collision": 0.03487398589688858,
+        "Markov": 0.031285868742628474,
+        "Compression": 0.031935221337233685,
+        "t-Tuple": 0.0414457790010058,
+        "LRS": 0.0414457790010058,
+        "Lag": 0.043863354137645735,
+        "MultiMCW": 0.04414078344235708,
+        "LZ78Y": 0.043888262917924276
+      },
+      "min": 0.031285868742628474,
+      "argmin": "Markov",
+      "all_conservative": false
+    }
+  ],
+  "F7b_sampler": {
+    "word_chi2_p_8bit": 0.4692460877864135,
+    "n_unique_16bit_words": 41491,
+    "n_shots": 65536,
+    "lc_pass_consecutive_seeds": 0.75,
+    "lc_pass_spread_seeds": 1.0,
+    "lc_p_consecutive": [
+      0.24823914109669634,
+      8.956325862455742e-05,
+      0.6213554952380174,
+      0.18325529717405512,
+      0.039268790981893675,
+      0.5943557682788834,
+      0.4905318756613585,
+      0.007713795109222984
+    ],
+    "lc_p_spread": [
+      0.2829436014329033,
+      0.7220369783845952,
+      0.6287647646062571,
+      0.28006659566623954,
+      0.3728869986456133,
+      0.8729181523004739,
+      0.9188121638490506,
+      0.9428599269466555
+    ],
+    "n_sequences": 8,
+    "n_bits_per_sequence": 524288
+  },
+  "F2_miscalibration": [
+    {
+      "delta_rad": 0.0,
+      "theta": 1.5707963267948966,
+      "p1_measured": 0.5008,
+      "p1_theory": 0.4999999999999999,
+      "bias_measured": 0.0008000000000000229,
+      "bias_theory": -1.1102230246251565e-16,
+      "shannon_entropy": 0.9999981533495598,
+      "min_entropy": 0.997693532616831,
+      "monobit_z": 0.7155417527999327
+    },
+    {
+      "delta_rad": 0.01,
+      "theta": 1.5807963267948966,
+      "p1_measured": 0.505475,
+      "p1_theory": 0.5049999166670833,
+      "bias_measured": 0.005475000000000008,
+      "bias_theory": 0.004999916667083326,
+      "shannon_entropy": 0.999913506900425,
+      "min_entropy": 0.9842883544265806,
+      "monobit_z": 4.89698887072454
+    },
+    {
+      "delta_rad": 0.02,
+      "theta": 1.5907963267948966,
+      "p1_measured": 0.51032,
+      "p1_theory": 0.5099993333466665,
+      "bias_measured": 0.010319999999999996,
+      "bias_theory": 0.009999333346666472,
+      "shannon_entropy": 0.9996926772087751,
+      "min_entropy": 0.9705259112573981,
+      "monobit_z": 9.230488611119132
+    },
+    {
+      "delta_rad": 0.05,
+      "theta": 1.6207963267948966,
+      "p1_measured": 0.52694,
+      "p1_theory": 0.5249895846353391,
+      "bias_measured": 0.026939999999999964,
+      "bias_theory": 0.024989584635339068,
+      "shannon_entropy": 0.9979048745087015,
+      "min_entropy": 0.9242893960807331,
+      "monobit_z": 24.095868525537735
+    },
+    {
+      "delta_rad": 0.1,
+      "theta": 1.6707963267948966,
+      "p1_measured": 0.55132,
+      "p1_theory": 0.5499167083234141,
+      "bias_measured": 0.05132000000000003,
+      "bias_theory": 0.049916708323414105,
+      "shannon_entropy": 0.9923872260575574,
+      "min_entropy": 0.8590381564776539,
+      "monobit_z": 45.902003442115685
+    },
+    {
+      "delta_rad": 0.15,
+      "theta": 1.7207963267948965,
+      "p1_measured": 0.57544,
+      "p1_theory": 0.5747190662367996,
+      "bias_measured": 0.07543999999999995,
+      "bias_theory": 0.07471906623679958,
+      "shannon_entropy": 0.983515807491556,
+      "min_entropy": 0.7972625856699193,
+      "monobit_z": 67.47558728903365
+    },
+    {
+      "delta_rad": 0.2,
+      "theta": 1.7707963267948965,
+      "p1_measured": 0.59885,
+      "p1_theory": 0.5993346653975306,
+      "bias_measured": 0.09885,
+      "bias_theory": 0.09933466539753055,
+      "shannon_entropy": 0.9716193276706122,
+      "min_entropy": 0.7397334130024319,
+      "monobit_z": 88.41412783034168
+    }
+  ],
+  "F3_noise": [
+    {
+      "p_ch": 0.0,
+      "p_ro": 0.0,
+      "p1": 0.499575,
+      "bias": -0.0004250000000000087,
+      "shannon_entropy": 0.9999994788263538,
+      "min_entropy": 0.9987742300936844,
+      "autocorr_lag1": -0.004615748892367567,
+      "battery_pass": 14,
+      "battery_total": 14
+    },
+    {
+      "p_ch": 0.0,
+      "p_ro": 0.01,
+      "p1": 0.49933,
+      "bias": -0.0006700000000000039,
+      "shannon_entropy": 0.9999987047480047,
+      "min_entropy": 0.9980680827408869,
+      "autocorr_lag1": 9.321839831780367e-05,
+      "battery_pass": 14,
+      "battery_total": 14
+    },
+    {
+      "p_ch": 0.0,
+      "p_ro": 0.02,
+      "p1": 0.49937,
+      "bias": -0.0006300000000000194,
+      "shannon_entropy": 0.9999988547883736,
+      "min_entropy": 0.9981833484987339,
+      "autocorr_lag1": 0.0015834228480706288,
+      "battery_pass": 14,
+      "battery_total": 14
+    },
+    {
+      "p_ch": 0.01,
+      "p_ro": 0.0,
+      "p1": 0.499,
+      "bias": -0.0010000000000000009,
+      "shannon_entropy": 0.9999971146079947,
+      "min_entropy": 0.9971174914668787,
+      "autocorr_lag1": 0.0009309883524566855,
+      "battery_pass": 14,
+      "battery_total": 14
+    },
+    {
+      "p_ch": 0.01,
+      "p_ro": 0.01,
+      "p1": 0.49941,
+      "bias": -0.0005899999999999794,
+      "shannon_entropy": 0.9999989955954796,
+      "min_entropy": 0.9982986234666058,
+      "autocorr_lag1": -0.0004763954272872927,
+      "battery_pass": 14,
+      "battery_total": 14
+    },
+    {
+      "p_ch": 0.01,
+      "p_ro": 0.02,
+      "p1": 0.499485,
+      "bias": -0.0005149999999999877,
+      "shannon_entropy": 0.9999992347222801,
+      "min_entropy": 0.9985147888603837,
+      "autocorr_lag1": -0.0013060585327305022,
+      "battery_pass": 14,
+      "battery_total": 14
+    },
+    {
+      "p_ch": 0.02,
+      "p_ro": 0.0,
+      "p1": 0.499035,
+      "bias": -0.0009649999999999936,
+      "shannon_entropy": 0.999997313050953,
+      "min_entropy": 0.9972182820662542,
+      "autocorr_lag1": 0.00108128454052221,
+      "battery_pass": 14,
+      "battery_total": 14
+    },
+    {
+      "p_ch": 0.02,
+      "p_ro": 0.01,
+      "p1": 0.49948,
+      "bias": -0.0005200000000000204,
+      "shannon_entropy": 0.9999992197903812,
+      "min_entropy": 0.9985003768264297,
+      "autocorr_lag1": -0.0005360848406776086,
+      "battery_pass": 14,
+      "battery_total": 14
+    },
+    {
+      "p_ch": 0.02,
+      "p_ro": 0.02,
+      "p1": 0.49953,
+      "bias": -0.00047000000000002595,
+      "shannon_entropy": 0.9999993626172371,
+      "min_entropy": 0.9986445036450884,
+      "autocorr_lag1": -0.001365901078760514,
+      "battery_pass": 14,
+      "battery_total": 14
+    },
+    {
+      "p_ch": 0.05,
+      "p_ro": 0.0,
+      "p1": 0.499085,
+      "bias": -0.0009149999999999991,
+      "shannon_entropy": 0.9999975842779405,
+      "min_entropy": 0.9973622808527443,
+      "autocorr_lag1": 0.0010116412228103845,
+      "battery_pass": 14,
+      "battery_total": 14
+    },
+    {
+      "p_ch": 0.05,
+      "p_ro": 0.01,
+      "p1": 0.49953,
+      "bias": -0.00047000000000002595,
+      "shannon_entropy": 0.9999993626172371,
+      "min_entropy": 0.9986445036450884,
+      "autocorr_lag1": -0.0005258961285865998,
+      "battery_pass": 14,
+      "battery_total": 14
+    },
+    {
+      "p_ch": 0.05,
+      "p_ro": 0.02,
+      "p1": 0.49955,
+      "bias": -0.00045000000000000595,
+      "shannon_entropy": 0.9999994157084295,
+      "min_entropy": 0.9987021584043528,
+      "autocorr_lag1": -0.001385827093263397,
+      "battery_pass": 14,
+      "battery_total": 14
+    }
+  ],
+  "F6_ghz": [
+    {
+      "n_qubits": 8,
+      "shots": 200000,
+      "p_ch": 0.0,
+      "Z_correlator": 1.0,
+      "Z_sigma": 0.0,
+      "X_correlator": 1.0,
+      "X_sigma": 0.0,
+      "Z_theory": 1.0,
+      "X_theory": 1.0,
+      "p1_first_qubit": 0.499845
+    },
+    {
+      "n_qubits": 8,
+      "shots": 200000,
+      "p_ch": 0.01,
+      "Z_correlator": 0.89727,
+      "Z_sigma": 0.0009871842459743773,
+      "X_correlator": 0.89689,
+      "X_sigma": 0.0009889093181379169,
+      "Z_theory": 0.8981805592744196,
+      "X_theory": 0.8981805592744196,
+      "p1_first_qubit": 0.50283
+    },
+    {
+      "n_qubits": 8,
+      "shots": 200000,
+      "p_ch": 0.02,
+      "Z_correlator": 0.8066599999999999,
+      "Z_sigma": 0.0013215514450826346,
+      "X_correlator": 0.80433,
+      "X_sigma": 0.0013286332283591286,
+      "Z_theory": 0.8055505042275646,
+      "X_theory": 0.8055505042275646,
+      "p1_first_qubit": 0.50298
+    }
+  ]
+}

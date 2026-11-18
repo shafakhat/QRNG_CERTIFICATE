@@ -1,0 +1,354 @@
+{
+  "suite": "NIST STS 2.1.2 (build: make, gcc, src/assess)",
+  "input": {
+    "source": "results/keys/qrng_raw_1Mbit.npy",
+    "bits_used": 1000000,
+    "sha256_ascii_bitstring": "e51843253f998686c6d38ef3f50301ad6ff851fb94ad8f6a5635e0d5732d8307"
+  },
+  "comparison1_pvalues_n500000": {
+    "configuration": "2 streams x 500 000 bits, ASCII input, all tests",
+    "rows": [
+      {
+        "test": "Frequency (Monobit)",
+        "ours": [
+          0.8100075387981913,
+          0.6672531649576608
+        ],
+        "sts": [
+          0.810008,
+          0.667253
+        ],
+        "max_abs_diff": 4.612018086325165e-07,
+        "reference_distribution": "identical"
+      },
+      {
+        "test": "Block Frequency (M=128)",
+        "ours": [
+          0.8601048963351936,
+          0.11602489765487997
+        ],
+        "sts": [
+          0.860105,
+          0.116025
+        ],
+        "max_abs_diff": 1.0366480640566778e-07,
+        "reference_distribution": "identical"
+      },
+      {
+        "test": "Runs",
+        "ours": [
+          0.1507399059125946,
+          0.8517095180852002
+        ],
+        "sts": [
+          0.15074,
+          0.85171
+        ],
+        "max_abs_diff": 4.819147997325857e-07,
+        "reference_distribution": "identical"
+      },
+      {
+        "test": "Longest Run of Ones (M=128)",
+        "ours": [
+          0.014691946373618136,
+          0.9791798234680191
+        ],
+        "sts": [
+          0.014692,
+          0.97918
+        ],
+        "max_abs_diff": 1.765319809221566e-07,
+        "reference_distribution": "identical"
+      },
+      {
+        "test": "Binary Matrix Rank (32x32)",
+        "ours": [
+          0.4445984295672974,
+          0.6220152679651736
+        ],
+        "sts": [
+          0.444598,
+          0.622015
+        ],
+        "max_abs_diff": 4.2956729739973554e-07,
+        "reference_distribution": "identical"
+      },
+      {
+        "test": "Discrete Fourier Transform",
+        "ours": [
+          0.8762438277343784,
+          0.8253874449390074
+        ],
+        "sts": [
+          0.876244,
+          0.825387
+        ],
+        "max_abs_diff": 4.4493900741571224e-07,
+        "reference_distribution": "identical"
+      },
+      {
+        "test": "Universal (L=6, Q=640)",
+        "ours": [
+          0.14902351915143944,
+          0.45970820674695
+        ],
+        "sts": [
+          0.149024,
+          0.459708
+        ],
+        "max_abs_diff": 4.80848560552305e-07,
+        "reference_distribution": "identical"
+      },
+      {
+        "test": "Overlapping Template (m=9)",
+        "ours": [
+          0.07785200915975256,
+          0.7579140887963156
+        ],
+        "sts": [
+          0.093913,
+          0.717982
+        ],
+        "max_abs_diff": 0.0399320887963156,
+        "reference_distribution": "differs (exact vs asymptotic)"
+      },
+      {
+        "test": "Approximate Entropy (m=10)",
+        "ours": [
+          0.18576278075389924,
+          0.052133837092292815
+        ],
+        "sts": [
+          0.185763,
+          0.052134
+        ],
+        "max_abs_diff": 2.192461007743951e-07,
+        "reference_distribution": "identical"
+      },
+      {
+        "test": "Serial (m=16)",
+        "ours": [
+          0.9138465379341145,
+          0.5665781453987476
+        ],
+        "sts": [
+          0.913847,
+          0.566578
+        ],
+        "max_abs_diff": 4.620658854426196e-07,
+        "reference_distribution": "identical"
+      },
+      {
+        "test": "Linear Complexity (M=500)",
+        "ours": [
+          0.7404794101168217,
+          0.48826523460402105
+        ],
+        "sts": [
+          0.737558,
+          0.486606
+        ],
+        "max_abs_diff": 0.0029214101168216766,
+        "reference_distribution": "differs (exact vs asymptotic)"
+      }
+    ],
+    "max_abs_p_diff": 4.819147997325857e-07,
+    "all_within_1e-6": true,
+    "tests_identical_to_1e-6": [
+      "Frequency (Monobit)",
+      "Block Frequency (M=128)",
+      "Runs",
+      "Longest Run of Ones (M=128)",
+      "Binary Matrix Rank (32x32)",
+      "Discrete Fourier Transform",
+      "Universal (L=6, Q=640)",
+      "Approximate Entropy (m=10)",
+      "Serial (m=16)"
+    ],
+    "tests_with_documented_constant_difference": [
+      "Linear Complexity (M=500)",
+      "Overlapping Template (m=9)"
+    ]
+  },
+  "comparison2_passrates_n10000": {
+    "configuration": "100 streams x 10 000 bits (STS reporting mode)",
+    "rows": [
+      {
+        "test": "Frequency (Monobit)",
+        "ours": [
+          100,
+          100
+        ],
+        "sts": [
+          100,
+          100
+        ],
+        "agree": true
+      },
+      {
+        "test": "Block Frequency (M=128)",
+        "ours": [
+          99,
+          100
+        ],
+        "sts": [
+          99,
+          100
+        ],
+        "agree": true
+      },
+      {
+        "test": "Cumulative Sums (fwd)",
+        "ours": [
+          99,
+          100
+        ],
+        "sts": [
+          99,
+          100
+        ],
+        "agree": true
+      },
+      {
+        "test": "Cumulative Sums (rev)",
+        "ours": [
+          100,
+          100
+        ],
+        "sts": [
+          100,
+          100
+        ],
+        "agree": true
+      },
+      {
+        "test": "Runs",
+        "ours": [
+          99,
+          100
+        ],
+        "sts": [
+          99,
+          100
+        ],
+        "agree": true
+      },
+      {
+        "test": "Longest Run of Ones (M=128)",
+        "ours": [
+          100,
+          100
+        ],
+        "sts": [
+          100,
+          100
+        ],
+        "agree": true
+      },
+      {
+        "test": "Binary Matrix Rank (32x32)",
+        "ours": [
+          100,
+          100
+        ],
+        "sts": [
+          100,
+          100
+        ],
+        "agree": true
+      },
+      {
+        "test": "Discrete Fourier Transform",
+        "ours": [
+          100,
+          100
+        ],
+        "sts": [
+          100,
+          100
+        ],
+        "agree": true
+      },
+      {
+        "test": "Overlapping Template (m=9)",
+        "ours": [
+          100,
+          100
+        ],
+        "sts": [
+          100,
+          100
+        ],
+        "agree": true
+      },
+      {
+        "test": "Linear Complexity (M=500)",
+        "ours": [
+          98,
+          100
+        ],
+        "sts": [
+          98,
+          100
+        ],
+        "agree": true
+      }
+    ],
+    "all_pass_counts_agree": true
+  },
+  "out_of_domain": {
+    "note": "At n = 10 000 the Universal test (needs n >= 387 840 for L >= 6) and ApEn (needs m < log2(n) - 5) are outside their documented range. The STS flags below reproduce exactly on true random bits, so they are a domain artefact.",
+    "rows": {
+      "Universal (auto L=5)": {
+        "raw": [
+          0,
+          100
+        ],
+        "control": [
+          0,
+          100
+        ]
+      },
+      "Approximate Entropy (m=10)": {
+        "raw": [
+          73,
+          100
+        ],
+        "control": [
+          79,
+          100
+        ]
+      }
+    }
+  },
+  "known_parameter_differences": [
+    {
+      "test": "Longest Run of Ones",
+      "ours_default": "exact DP pmf, bins >= 5% mass",
+      "sts": "tabulated Table 2.4 partition",
+      "effect": "identical at M=10000 (7 classes); differ at M=128",
+      "resolved_by": "scheme='sp80022'"
+    },
+    {
+      "test": "Binary Matrix Rank",
+      "ours_default": "P = 0.2888 / 0.5776 / 0.1336 (4 dp, SP 800-22 text)",
+      "sts": "P = 0.288788 / 0.577576 / 0.133636 (6 dp)",
+      "effect": "rank counts F identical; only the constants differ",
+      "resolved_by": "exact_probs=True"
+    },
+    {
+      "test": "Overlapping Template",
+      "ours_default": "exact overlap distribution (dynamic programming pmf)",
+      "sts": "eta/lambda asymptotic formula",
+      "effect": "class frequencies F identical; chi2 differs (9.909 vs 9.406 on stream 1), so p differs ~2e-2",
+      "resolved_by": "documented; exact pmf retained deliberately"
+    },
+    {
+      "test": "Serial",
+      "ours_default": "m = min(16, floor(log2 n) - 3), refuses m >= log2(n)-2",
+      "sts": "m = 16 at every length",
+      "effect": "inapplicable for both at n = 10 000; identical at n >= 131 072",
+      "resolved_by": "compare at n = 500 000"
+    }
+  ]
+}

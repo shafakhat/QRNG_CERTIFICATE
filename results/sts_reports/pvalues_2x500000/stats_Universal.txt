@@ -1,0 +1,32 @@
+		UNIVERSAL STATISTICAL TEST
+		--------------------------------------------
+		COMPUTATIONAL INFORMATION:
+		--------------------------------------------
+		(a) L         = 6
+		(b) Q         = 640
+		(c) K         = 82693
+		(d) sum       = 431873.377900
+		(e) sigma     = 0.003400
+		(f) variance  = 2.954000
+		(g) exp_value = 5.217705
+		(h) phi       = 5.222611
+		(i) WARNING:  2 bits were discarded.
+		-----------------------------------------
+SUCCESS		p_value = 0.149024
+
+		UNIVERSAL STATISTICAL TEST
+		--------------------------------------------
+		COMPUTATIONAL INFORMATION:
+		--------------------------------------------
+		(a) L         = 6
+		(b) Q         = 640
+		(c) K         = 82693
+		(d) sum       = 431675.550520
+		(e) sigma     = 0.003400
+		(f) variance  = 2.954000
+		(g) exp_value = 5.217705
+		(h) phi       = 5.220219
+		(i) WARNING:  2 bits were discarded.
+		-----------------------------------------
+SUCCESS		p_value = 0.459708
+

@@ -1,0 +1,74 @@
+ApEn calibration: {'n=1000000_m=10': {'mean': 1024.8006634909473, 'std': 50.77485925355421, 'M': 60}}
+{
+ "Frequency (Monobit)": {
+  "pass_rate": 0.9833,
+  "uniformity_p": 0.8881,
+  "calibrated": true
+ },
+ "Block Frequency (M=128)": {
+  "pass_rate": 0.9833,
+  "uniformity_p": 0.8343,
+  "calibrated": true
+ },
+ "Runs": {
+  "pass_rate": 1.0,
+  "uniformity_p": 0.1783,
+  "calibrated": true
+ },
+ "Longest Run of Ones": {
+  "pass_rate": 1.0,
+  "uniformity_p": 0.5681,
+  "calibrated": true
+ },
+ "Binary Matrix Rank (32x32)": {
+  "pass_rate": 1.0,
+  "uniformity_p": 0.9496,
+  "calibrated": true
+ },
+ "Discrete Fourier Transform": {
+  "pass_rate": 1.0,
+  "uniformity_p": 0.2757,
+  "calibrated": true
+ },
+ "Non-overlapping Template (148)": {
+  "pass_rate": 1.0,
+  "uniformity_p": 0.0,
+  "calibrated": false
+ },
+ "Overlapping Template (m=9)": {
+  "pass_rate": 1.0,
+  "uniformity_p": 0.4373,
+  "calibrated": true
+ },
+ "Universal (Maurer, L=7)": {
+  "pass_rate": 0.9667,
+  "uniformity_p": 0.1626,
+  "calibrated": true
+ },
+ "Linear Complexity (M=500)": {
+  "pass_rate": 1.0,
+  "uniformity_p": 0.932,
+  "calibrated": true
+ },
+ "Serial (m=16)": {
+  "pass_rate": 1.0,
+  "uniformity_p": 0.7728,
+  "calibrated": true
+ },
+ "Approximate Entropy (m=10)": {
+  "pass_rate": 1.0,
+  "uniformity_p": 0.8623,
+  "calibrated": true
+ },
+ "Cumulative Sums (fwd)": {
+  "pass_rate": 0.9833,
+  "uniformity_p": 0.4686,
+  "calibrated": true
+ },
+ "Cumulative Sums (rev)": {
+  "pass_rate": 0.9833,
+  "uniformity_p": 0.7728,
+  "calibrated": true
+ }
+}
+all calibrated: False

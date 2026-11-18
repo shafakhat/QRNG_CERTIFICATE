@@ -1,0 +1,17 @@
+{
+  "_purpose": "Demonstrates that reported quantities are computed, not hard-coded: only the RNG/simulator seed changes.",
+  "A_chsh_p0.01_200k_shots": {
+    "1000":   {"S": 2.7604, "sigma": 0.0032},
+    "7777":   {"S": 2.7568, "sigma": 0.0032},
+    "424242": {"S": 2.7494, "sigma": 0.0032},
+    "999999": {"S": 2.7536, "sigma": 0.0032},
+    "theory": 2.7535,
+    "spread": 0.011
+  },
+  "B_bb84_p0.01_full_pipeline": {
+    "seed_7":     {"sifted": 524632, "qber": 0.01331, "final_key_bits": 373116, "final_key_rate": 0.35583},
+    "seed_12345": {"sifted": 523983, "qber": 0.01296, "final_key_bits": 375180, "final_key_rate": 0.35780},
+    "theory_qber": 0.01324
+  },
+  "conclusion": "All values move by amounts consistent with their statistical error when the seed changes; the reported numbers use seed=7 (E1-E4) and seed0=1000 (CHSH scan) for exact reproducibility."
+}

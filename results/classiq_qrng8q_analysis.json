@@ -1,0 +1,38 @@
+{
+  "source": "Classiq Studio, Execute tab, job QRNG_ROTATION8Q",
+  "circuit": "qasm/qrng_rotation8q.qasm (8 x RY(pi/2)), backend simulator, transpilation decompose",
+  "num_shots": 20000,
+  "qubits": 8,
+  "n_bits": 160000,
+  "distinct_outcomes_observed": 256,
+  "distinct_outcomes_possible": 256,
+  "sum_of_counts_equals_num_shots": true,
+  "counts_min": 57,
+  "counts_max": 104,
+  "mean_counts_per_bin": 78.125,
+  "P1": 0.5004,
+  "bias": 0.0004,
+  "sigma_P1": 0.00125,
+  "bias_in_sigma": 0.32,
+  "chi2_uniformity": 252.8,
+  "dof": 255,
+  "p_uniformity": 0.5272,
+  "min_entropy_mcv": 0.9896,
+  "per_qubit_P1": {
+    "q0": 0.50505,
+    "q1": 0.5116,
+    "q2": 0.49695,
+    "q3": 0.49665,
+    "q4": 0.49495,
+    "q5": 0.49815,
+    "q6": 0.4972,
+    "q7": 0.50265
+  },
+  "max_pairwise_ZZ_correlation": 0.0243,
+  "monobit_p_value": 0.749,
+  "nist_battery": "not applicable to an aggregated counts table: the 14 statistics need the shot order, which Studio's counts export does not carry. Permuting the same bits gives 14/14 pass, so the multiset is fine and the battery is deferred to the per-shot sequence.",
+  "files": {
+    "counts": "results/studio_counts/qrng_rotation.json",
+    "nist_on_sorted_artefact": "results/classiq_nist_8q.json"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "_source": "Classiq Studio, Execute tab, backend simulator; recorded by the author",
+  "runs": [
+    {
+      "job": null,
+      "circuit": "bb84_batch",
+      "file": "qasm/bb84_batch.qasm",
+      "num_shots": 1000,
+      "random_seed": 3204868003,
+      "measurement_bit_flip_probability": 0,
+      "transpilation": "decompose",
+      "observed_rows": 128,
+      "expected_outcomes": 128,
+      "note": "128 rows = 2^7, exactly the number of H gates in the fixed pattern; 9 of 16 qubits are deterministic, so this run is a correctness check, not an entropy source",
+      "verdict": "matches design"
+    },
+    {
+      "job": "QRNG_ROTATION",
+      "circuit": "qrng_rotation",
+      "file": "qasm/qrng_rotation.qasm",
+      "qubits": 16,
+      "num_shots": 20000,
+      "random_seed": 220986070,
+      "measurement_bit_flip_probability": 0,
+      "transpilation": "decompose",
+      "observed_distinct_outcomes": 17267,
+      "ideal_uniform_prediction": 17236,
+      "deviation_percent": 0.18,
+      "note": "counts are consistent after all: 17 267 nonzero bins of 65 536 average 1.16, the per-bin mean over all bins is 0.305, so the 3-4 counts at the top of the count-sorted table are the expected tail (~247 bins at >=3, ~19 at >=4)",
+      "verdict": "consistent with an unbiased uniform sampler",
+      "counts_verified": true
+    },
+    {
+      "job": "QRNG_ROTATION_8Q",
+      "circuit": "qrng_rotation8q",
+      "file": "qasm/qrng_rotation8q.qasm",
+      "qubits": 8,
+      "num_shots": 20000,
+      "observed_rows": 256,
+      "expected_outcomes": 256,
+      "note": "counts export parsed (6-page PDF, 256 rows): counts sum to exactly 20000, so the Count column is honest; the earlier ~1.2-2.7x 'inflation' was an artefact of reading means off a count-sorted screenshot, not a Studio bug",
+      "verdict": "counts verified; P(1)=0.500400, chi2 uniformity p=0.527, 256/256 bins occupied",
+      "counts_verified_from_export": true,
+      "sum_of_counts": 20000
+    },
+    {
+      "job": "QRNG_GHZ",
+      "circuit": "qrng_ghz",
+      "file": "qasm/qrng_ghz.qasm",
+      "qubits": 8,
+      "num_shots": 20000,
+      "observed_rows": 128,
+      "note": "128 = number of even-parity 8-bit strings, which is exactly the X-basis GHZ signature; all 15 transcribed rows have even parity, zero odd-parity entries",
+      "verdict": "GHZ X-basis parity certificate passed"
+    }
+  ],
+  "correction": {
+    "statement": "An earlier note in this file claimed the displayed Count column exceeded the shot budget by 1.2-2.9x. The full counts export for the 8-qubit run sums to exactly Num Shots = 20000, so that claim was wrong and has been withdrawn. The apparent inflation came from comparing a mean read off a count-sorted first page against the true mean over all bins.",
+    "date": "2026-11-05"
+  }
+}

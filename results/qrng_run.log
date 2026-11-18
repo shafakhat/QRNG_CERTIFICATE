@@ -1,0 +1,75 @@
+
+== F1  generator characterisation (1 Mbit) ==
+  raw 1 Mbit: p1=0.500032 bias=+3.24e-05 H_sh=1.000000 H_min=0.999906 battery 14/14
+
+== F2  miscalibration scan ==
+  delta=+0.0000 rad: p1=0.50080 (theory 0.50000) H_min=0.9977
+  delta=+0.0100 rad: p1=0.50548 (theory 0.50500) H_min=0.9843
+  delta=+0.0200 rad: p1=0.51032 (theory 0.51000) H_min=0.9705
+  delta=+0.0500 rad: p1=0.52694 (theory 0.52499) H_min=0.9243
+  delta=+0.1000 rad: p1=0.55132 (theory 0.54992) H_min=0.8590
+  delta=+0.1500 rad: p1=0.57544 (theory 0.57472) H_min=0.7973
+  delta=+0.2000 rad: p1=0.59885 (theory 0.59933) H_min=0.7397
+
+== F3  device-noise scan ==
+  p_ch=0.000 p_ro=0.000: p1=0.49957 H_min=0.9988 battery 14/14
+  p_ch=0.000 p_ro=0.010: p1=0.49933 H_min=0.9981 battery 14/14
+  p_ch=0.000 p_ro=0.020: p1=0.49937 H_min=0.9982 battery 14/14
+  p_ch=0.010 p_ro=0.000: p1=0.49900 H_min=0.9971 battery 14/14
+  p_ch=0.010 p_ro=0.010: p1=0.49941 H_min=0.9983 battery 14/14
+  p_ch=0.010 p_ro=0.020: p1=0.49949 H_min=0.9985 battery 14/14
+  p_ch=0.020 p_ro=0.000: p1=0.49904 H_min=0.9972 battery 14/14
+  p_ch=0.020 p_ro=0.010: p1=0.49948 H_min=0.9985 battery 14/14
+  p_ch=0.020 p_ro=0.020: p1=0.49953 H_min=0.9986 battery 14/14
+  p_ch=0.050 p_ro=0.000: p1=0.49909 H_min=0.9974 battery 14/14
+  p_ch=0.050 p_ro=0.010: p1=0.49953 H_min=0.9986 battery 14/14
+  p_ch=0.050 p_ro=0.020: p1=0.49955 H_min=0.9987 battery 14/14
+
+== F4  SP 800-90B min-entropy ==
+  min over 9 estimators = 0.7294 bits/sample; IID permutation p = 0.050 (66s)
+
+== F5  privacy amplification / extraction ==
+  extracted 743803 bits from 1048576 (rate 0.709), battery 13/14
+
+== F6  GHZ certification ==
+  p_ch=0.0: <Z^8>=+1.0000 <X^8>=+1.0000
+  p_ch=0.01: <Z^8>=+0.8973 <X^8>=+0.8969
+  p_ch=0.02: <Z^8>=+0.8067 <X^8>=+0.8043
+
+== F7  second-level analysis ==
+  Frequency (Monobit)                pass=1.000 (0.99+-0.075)  uniformity p=0.689
+  Block Frequency (M=128)            pass=1.000 (0.99+-0.075)  uniformity p=0.174
+  Runs                               pass=0.938 (0.99+-0.075)  uniformity p=0.025
+  Longest Run of Ones                pass=1.000 (0.99+-0.075)  uniformity p=0.812
+  Binary Matrix Rank (32x32)         pass=1.000 (0.99+-0.075)  uniformity p=0.560
+  Discrete Fourier Transform         pass=1.000 (0.99+-0.075)  uniformity p=0.812
+  Non-overlapping Template (148)     pass=1.000 (0.99+-0.075)  uniformity p=0.000
+  Overlapping Template (m=9)         pass=1.000 (0.99+-0.075)  uniformity p=0.174
+  Universal (Maurer, L=7)            pass=1.000 (0.99+-0.075)  uniformity p=0.911
+  Linear Complexity (M=500)          pass=1.000 (0.99+-0.075)  uniformity p=0.689
+  Serial (m=16)                      pass=0.938 (0.99+-0.075)  uniformity p=0.689
+  Approximate Entropy (m=10)         pass=1.000 (0.99+-0.075)  uniformity p=0.057
+  Cumulative Sums (fwd)              pass=1.000 (0.99+-0.075)  uniformity p=0.243
+  Cumulative Sums (rev)              pass=1.000 (0.99+-0.075)  uniformity p=0.911
+
+== F7b  sampler qualification (seed hygiene) ==
+  8-bit word chi2 p=0.469; LC pass rate: consecutive seeds 0.75, spread seeds 1.00
+
+== F8  classical PRNG reference ==
+
+== F9  negative controls (failure modes) ==
+  asymmetric readout     p1=0.47901 (th 0.48000) H_min=0.9407 ac1=-0.0031 failed 7/14: Frequency (Monobit), Block Frequency (M=128), Runs, Longest Run of Ones ...
+  amplitude damping      p1=0.45776 (th 0.46000) H_min=0.8830 ac1=+0.0049 failed 11/14: Frequency (Monobit), Block Frequency (M=128), Runs, Longest Run of Ones ...
+  slow pulse drift       p1=0.49600 (th 0.50000) H_min=0.9885 ac1=-0.0004 failed 9/14: Frequency (Monobit), Block Frequency (M=128), Longest Run of Ones, Discrete Fourier Transform ...
+  phase damping          p1=0.50006 (th 0.50000) H_min=0.9998 ac1=-0.0009 failed 0/14: 
+
+== F10  entropy-estimator validation ==
+  p=0.50 true H_min=1.000 min-est=0.729 (Compression) conservative=True
+  p=0.55 true H_min=0.862 min-est=0.705 (Compression) conservative=False
+  p=0.60 true H_min=0.737 min-est=0.635 (Compression) conservative=False
+  p=0.70 true H_min=0.515 min-est=0.458 (Compression) conservative=False
+  p=0.80 true H_min=0.322 min-est=0.290 (Compression) conservative=True
+  p=0.90 true H_min=0.152 min-est=0.131 (Compression) conservative=False
+  p=0.97 true H_min=0.044 min-est=0.031 (Markov) conservative=False
+
+all QRNG experiments finished in 520.8 s

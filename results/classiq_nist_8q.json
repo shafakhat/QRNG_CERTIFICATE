@@ -1,0 +1,21 @@
+{
+  "n_bits": 160000,
+  "pass": 2,
+  "total": 14,
+  "p_values": {
+    "Frequency (Monobit)": 0.74896833055336,
+    "Block Frequency (M=128)": 0.0,
+    "Runs": 0.3787203377001216,
+    "Longest Run of Ones": 0.0,
+    "Binary Matrix Rank (32x32)": 2.0883726563285524e-220,
+    "Discrete Fourier Transform": 0.0,
+    "Non-overlapping Template (148)": 5.283934079016476e-63,
+    "Overlapping Template (m=9)": 3.95211002683044e-54,
+    "Universal (Maurer, L=7)": 0.0,
+    "Linear Complexity (M=500)": 0.0,
+    "Serial (m=14)": 0.0,
+    "Approximate Entropy (m=10)": 0.0,
+    "Cumulative Sums (fwd)": 9.656565107058962e-92,
+    "Cumulative Sums (rev)": 6.135613059173697e-89
+  }
+}

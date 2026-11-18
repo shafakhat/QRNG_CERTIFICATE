@@ -1,0 +1,46 @@
+{
+  "0.0": {
+    "raw_pass": 13,
+    "raw_total": 14,
+    "raw_failing": [
+      "Block Frequency (M=128)"
+    ],
+    "final_pass": 14,
+    "final_total": 14,
+    "raw_monobit_p": 0.16739734533199702,
+    "final_monobit_p": 0.9343929187264878
+  },
+  "0.01": {
+    "raw_pass": 12,
+    "raw_total": 14,
+    "raw_failing": [
+      "Block Frequency (M=128)",
+      "Overlapping Template (m=9)"
+    ],
+    "final_pass": 14,
+    "final_total": 14,
+    "raw_monobit_p": 0.7341341972385937,
+    "final_monobit_p": 0.788325122789911
+  },
+  "0.02": {
+    "raw_pass": 12,
+    "raw_total": 14,
+    "raw_failing": [
+      "Block Frequency (M=128)",
+      "Overlapping Template (m=9)"
+    ],
+    "final_pass": 14,
+    "final_total": 14,
+    "raw_monobit_p": 0.7341341972385937,
+    "final_monobit_p": 0.32502441595707154
+  },
+  "_diagnostics": {
+    "note": "raw sifted bits are mildly over-dispersed at the 128-bit block scale; no periodic structure found",
+    "block_fraction_std_observed_p_ch0": 0.0476,
+    "block_fraction_std_iid_expected": 0.0442,
+    "variance_ratio": 1.077,
+    "lag1_correlation": -0.0025,
+    "ones_fraction": 0.499,
+    "block_frequency_p_p_ch0": 2.05e-12
+  }
+}

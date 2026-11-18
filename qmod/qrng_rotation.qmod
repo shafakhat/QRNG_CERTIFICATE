@@ -1,0 +1,10 @@
+qfunc prep_ry(theta: real, q: qbit) {
+  RY(theta, q);
+}
+
+qfunc main(theta: real, output out: qbit[16]) {
+  allocate(out);
+  repeat (i: 16) {
+    prep_ry(theta, out[i]);
+  }
+}

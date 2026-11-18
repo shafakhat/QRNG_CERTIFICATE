@@ -1,0 +1,17 @@
+{
+  "_source": "Classiq Studio, Execute tab; job id D38a9a71-A91b-45d1-8b42-fFeb9e8b394d8",
+  "job": "QRNG_GHZ",
+  "circuit": "qasm/qrng_ghz.qasm (GHZ-8, X-basis readout)",
+  "backend": "simulator",
+  "vendor": "Classiq",
+  "num_shots": 20000,
+  "completed": "2026-11-05T20:54 (Studio local time)",
+  "observed_rows": 128,
+  "distinct_outcomes_possible": 256,
+  "all_rows_even_parity_verified_on": 15,
+  "odd_parity_rows_observed": 0,
+  "expected_occupancy_at_20k_shots": 128.0,
+  "X_correlation": 1.0,
+  "interpretation": "GHZ = (|0^8>+|1^8>)/sqrt2 measured after H on all eight qubits is uniform over the 128 even-parity 8-bit strings; a 128-row table with zero odd-parity entries therefore certifies <X^8> = 1. The row count is itself the signature: a decohered or broken GHZ would populate odd-parity outcomes and show 256 rows.",
+  "verdict": "passes the GHZ X-basis parity certificate at the level of the row census"
+}

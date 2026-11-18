@@ -1,0 +1,14 @@
+{
+  "job": "BB84_ROUND",
+  "circuit": "qasm/bb84_round.qasm",
+  "num_shots": 2000,
+  "counts": {
+    "0": 1013,
+    "1": 987
+  },
+  "P1": 0.4935,
+  "sigma_P1": 0.0112,
+  "dev_sigma": -0.58,
+  "setup": "bit=1, Alice basis X, Bob basis Z (mismatch)",
+  "verdict": "equiprobable outcome as required for a basis-mismatch round; such rounds are discarded in sifting, so they contribute no key material and no QBER information"
+}
