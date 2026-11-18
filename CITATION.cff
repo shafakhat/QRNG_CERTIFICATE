@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this code or these results, please cite it using the metadata below."
+title: "Experimental code and measured results for certified quantum randomness from gate-model circuits"
+type: software
+license: MIT
+authors:
+  - family-names: Mohammed
+    given-names: Shafakhatullah Khan
+    orcid: "https://orcid.org/0000-0003-2089-9810"
+    email: shafakhatullah.khan@aceec.ac.in
+    affiliation: "Department of Computer Science and Engineering, ACE Engineering College, Hyderabad 501301, Telangana, India"
+  - family-names: Arshad
+    given-names: Mohammad
+    orcid: "https://orcid.org/0000-0001-5699-2182"
+    email: arshad.ai@anurag.edu.in
+    affiliation: "School of Engineering, Anurag University, Hyderabad 500088, Telangana, India"
+  - family-names: Vali
+    given-names: Shaik Nagur
+    orcid: "https://orcid.org/0009-0000-0829-6377"
+    email: shaiknagur.vali@aceec.ac.in
+    affiliation: "Department of Computer Science and Engineering, ACE Engineering College, Hyderabad 501301, Telangana, India"
+repository-code: "https://github.com/shafakhat/qrng-certification"
