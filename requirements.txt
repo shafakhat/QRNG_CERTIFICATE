@@ -1,0 +1,15 @@
+# Core scientific stack -- everything below is enough to run every experiment.
+numpy>=1.26
+scipy>=1.11
+matplotlib>=3.8
+
+# Quantum simulation layer (the sampler that executes the circuits locally).
+qiskit>=1.0
+qiskit-aer>=0.14
+
+# OPTIONAL.  Only needed for the Classiq routes: qmod_models.py,
+# run_classiq_synthesis.py, visualize_in_studio.py, and any execution on the
+# Classiq hosted simulator.  Cloud synthesis/execution also needs a free account:
+#     pip install classiq && classiq authenticate
+# The experiments themselves run fully offline without this package.
+classiq>=1.30
