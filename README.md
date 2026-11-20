@@ -49,7 +49,7 @@ Install:
 
 ```bash
 git clone https://github.com/shafakhat/QRNG_CERTIFICATE.git
-cd qrng-certification
+cd QRNG_CERTIFICATE
 python3 -m venv .venv && source .venv/bin/activate     # optional but recommended
 pip install -r requirements.txt
 ```
