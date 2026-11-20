@@ -48,7 +48,7 @@ and no hardware results are claimed.
 Install:
 
 ```bash
-git clone https://github.com/shafakhat/qrng-certification.git
+git clone https://github.com/shafakhat/QRNG_CERTIFICATE.git
 cd qrng-certification
 python3 -m venv .venv && source .venv/bin/activate     # optional but recommended
 pip install -r requirements.txt
