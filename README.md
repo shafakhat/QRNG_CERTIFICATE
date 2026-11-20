@@ -1,15 +1,8 @@
 # QRNG_CERTIFICATE
 
-Experimental code and measured results for a study of **quantum random number
-generation from gate-model circuits**: two generators (a rotation-based one and a
-GHZ-entangled one) are simulated, their raw bit streams are measured, an entropy
-estimate is certified with the NIST SP 800-90B estimators, the stream is
-compressed with a randomness extractor, and the result is validated with the
-14-statistic NIST SP 800-22 battery. The study also measures what the battery does
-*not* catch, using negative controls.
+Experimental code and measured results for a study of **quantum random number generation from gate-model circuits**: two generators (a rotation-based one and a GHZ-entangled one) are simulated, their raw bit streams are measured, an entropy estimate is certified with the NIST SP 800-90B estimators, the stream is compressed with a randomness extractor, and the result is validated with the 14-statistic NIST SP 800-22 battery. The study also measures what the battery does *not* catch, using negative controls.
 
-Everything here is CPU-only classical simulation. No quantum hardware is required
-and no hardware results are claimed.
+Everything here is CPU-only classical simulation. No quantum hardware is required and no hardware results are claimed.
 
 ---
 
@@ -144,11 +137,10 @@ After the full run, these values in `results/qrng_results.json` should match:
 | certified entropy rate (SP 800-90B minimum) | `F5_extraction.h_min_used` | 0.7294 bits/sample |
 | extractor output length | `F5_extraction.n_out` | 743 803 bits from 1 048 576 |
 | statistics passed by the extractor output | `F5_extraction.battery_pass` | 13 of 14 |
-| statistics passed by the raw stream | `F7_second_level` | 14 of 14 |
+| statistics passed by the raw stream | `F1_main.battery_pass` | 14 of 14 |
 
 Seeds are fixed, so a full run is deterministic on the same Qiskit/Aer version.
-Different Aer releases change the random stream, so exact last digits can move;
-the physics does not.
+Different Aer releases change the random stream, so exact last digits can move; the physics does not.
 
 ---
 
@@ -177,14 +169,10 @@ results/  every measured number, the raw counts and the extracted key
 
 ## 7. Scope, honestly
 
-* All numbers come from **classical simulation** of the circuits (Qiskit Aer) with
-  an explicit, stated device model — depolarising channel, readout error, and the
-  injected faults used as negative controls — plus execution on the Classiq hosted
+* All numbers come from **classical simulation** of the circuits (Qiskit Aer) with an explicit, stated device model — depolarising channel, readout error, and the injected faults used as negative controls — plus execution on the Classiq hosted
   simulator. Nothing was run on quantum hardware.
-* The device model is memoryless; real detectors have drift and afterpulsing that
-  this model does not represent.
-* `code/run_ibm_hardware.py` contains the route for running the same circuits on
-  IBM hardware; it needs credentials and was not used for any reported number.
+* The device model is memoryless; real detectors have drift and afterpulsing that this model does not represent.
+* `code/run_ibm_hardware.py` contains the route for running the same circuits on IBM hardware; it needs credentials and was not used for any reported number.
 
 ## Licence
 
